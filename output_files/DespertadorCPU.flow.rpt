@@ -1,5 +1,5 @@
 Flow report for DespertadorCPU
-Tue Aug 13 15:03:05 2024
+Tue Aug 13 17:33:40 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Aug 13 15:03:05 2024       ;
+; Flow Status                     ; Successful - Tue Aug 13 17:33:40 2024       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; DespertadorCPU                              ;
 ; Top-level Entity Name           ; DespertadorCPU_inst                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 874 / 32,070 ( 3 % )                        ;
-; Total registers                 ; 1210                                        ;
+; Logic utilization (in ALMs)     ; 881 / 32,070 ( 3 % )                        ;
+; Total registers                 ; 1196                                        ;
 ; Total pins                      ; 36 / 457 ( 8 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 44,032 / 4,065,280 ( 1 % )                  ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/13/2024 15:01:11 ;
+; Start date & time ; 08/13/2024 17:31:28 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DespertadorCPU      ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+------------------------------------------------------------------+----------------+---------------------+----------------+
 ; Assignment Name                     ; Value                                                            ; Default Value  ; Entity Name         ; Section Id     ;
 +-------------------------------------+------------------------------------------------------------------+----------------+---------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 168119034881856.172358287018728                                  ; --             ; --                  ; --             ;
+; COMPILER_SIGNATURE_ID               ; 168119034881856.172359188716644                                  ; --             ; --                  ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                                                ; --             ; --                  ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim (SystemVerilog)                                         ; <None>         ; --                  ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                                             ; --             ; --                  ; eda_simulation ;
@@ -106,12 +106,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:30     ; 1.0                     ; 4999 MB             ; 00:00:27                           ;
-; Fitter               ; 00:00:57     ; 1.1                     ; 6725 MB             ; 00:01:20                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 4856 MB             ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:08     ; 1.7                     ; 5202 MB             ; 00:00:11                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4783 MB             ; 00:00:03                           ;
-; Total                ; 00:01:46     ; --                      ; --                  ; 00:02:08                           ;
+; Analysis & Synthesis ; 00:00:42     ; 1.0                     ; 5008 MB             ; 00:00:24                           ;
+; Fitter               ; 00:01:01     ; 1.1                     ; 6764 MB             ; 00:01:18                           ;
+; Assembler            ; 00:00:10     ; 1.0                     ; 4852 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:09     ; 1.6                     ; 5199 MB             ; 00:00:10                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4783 MB             ; 00:00:02                           ;
+; Total                ; 00:02:05     ; --                      ; --                  ; 00:02:00                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
