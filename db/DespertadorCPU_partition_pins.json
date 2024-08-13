@@ -1,0 +1,153 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "hora1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hora1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hora1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hora1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hora1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hora1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hora1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hora2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hora2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hora2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hora2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hora2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hora2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hora2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "min1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "min1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "min1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "min1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "min1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "min1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "min1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "min2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "min2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "min2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "min2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "min2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "min2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "min2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "buzzer",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "btnmin",
+					"strict" : false
+				},
+				{
+					"name" : "btnapagar",
+					"strict" : false
+				},
+				{
+					"name" : "swmodo",
+					"strict" : false
+				},
+				{
+					"name" : "swinicio",
+					"strict" : false
+				},
+				{
+					"name" : "btnhora",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

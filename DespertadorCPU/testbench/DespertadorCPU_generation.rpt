@@ -1,0 +1,575 @@
+Info: Starting: Create testbench Platform Designer system
+Info: C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/DespertadorCPU.ipx
+Info: qsys-generate C:\Users\DELL\Desktop\DespertadorCPU\DespertadorCPU.qsys --testbench=STANDARD --output-directory=C:\Users\DELL\Desktop\DespertadorCPU --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading DespertadorCPU/DespertadorCPU.qsys
+Progress: Reading input file
+Progress: Adding btnapagar [altera_avalon_pio 18.1]
+Progress: Parameterizing module btnapagar
+Progress: Adding btnhora [altera_avalon_pio 18.1]
+Progress: Parameterizing module btnhora
+Progress: Adding btnmin [altera_avalon_pio 18.1]
+Progress: Parameterizing module btnmin
+Progress: Adding buzzer [altera_avalon_pio 18.1]
+Progress: Parameterizing module buzzer
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu [altera_nios2_gen2 18.1]
+Progress: Parameterizing module cpu
+Progress: Adding hora1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module hora1
+Progress: Adding hora2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module hora2
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding memory [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module memory
+Progress: Adding min1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module min1
+Progress: Adding min2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module min2
+Progress: Adding swinicio [altera_avalon_pio 18.1]
+Progress: Parameterizing module swinicio
+Progress: Adding swmodo [altera_avalon_pio 18.1]
+Progress: Parameterizing module swmodo
+Progress: Adding timer_0 [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DespertadorCPU.btnapagar: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DespertadorCPU.btnhora: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DespertadorCPU.btnmin: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DespertadorCPU.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: DespertadorCPU.swinicio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DespertadorCPU.swmodo: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: qsys-generate succeeded.
+Info: Loading IP catalog for testbench.
+Progress: 
+Progress: 
+Progress: 
+Progress: (2) searching C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/root_components.ipx (ipx file)
+Info: Reading index C:\intelfpga_lite\18.1\quartus\sopc_builder\bin\root_components.ipx
+Info: C:\intelfpga_lite\18.1\quartus\sopc_builder\bin\root_components.ipx: Loading now from components.ipx
+Info: Reading index C:\intelfpga_lite\18.1\quartus\sopc_builder\bin\ip_component_categories.ipx
+Info: C:\intelfpga_lite\18.1\quartus\sopc_builder\bin\ip_component_categories.ipx described 0 plugins, 0 paths, in 0.00 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/ip_component_categories.ipx matched 1 files in 0.00 seconds
+Info: C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index C:\Users\DELL\Desktop\DespertadorCPU\DespertadorCPU\testbench\DespertadorCPU.ipx
+Progress: Loading DespertadorCPU/DespertadorCPU.qsys
+Info: C:/Users/DELL/Desktop/DespertadorCPU/* matched 15 files in 0.00 seconds
+Info: C:/Users/DELL/Desktop/DespertadorCPU/ip/**/* matched 0 files in 0.00 seconds
+Info: C:/Users/DELL/Desktop/DespertadorCPU/*/* matched 337 files in 0.01 seconds
+Info: C:\Users\DELL\Desktop\DespertadorCPU\DespertadorCPU\testbench\DespertadorCPU.ipx described 0 plugins, 3 paths, in 0.02 seconds
+Progress: Loading testbench/DespertadorCPU_tb.qsys
+Info: C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/* matched 12 files in 0.02 seconds
+Info: C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/*/* matched 9 files in 0.00 seconds
+Info: C:/Users/DELL/.altera.quartus/ip/18.1/**/* matched 0 files in 0.00 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_PROJECTDIR/* matched 0 files in 0.00 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_USERDIR/* matched 0 files in 0.00 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_GLOBALDIR/* matched 0 files in 0.00 seconds
+Info: Reading index C:\intelfpga_lite\18.1\ip\altera\altera_components.ipx
+Info: C:\intelfpga_lite\18.1\ip\altera\altera_components.ipx described 2035 plugins, 0 paths, in 0.13 seconds
+Info: C:/intelfpga_lite/18.1/ip/**/* matched 139 files in 0.13 seconds
+Info: C:/intelfpga_lite/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index C:\intelfpga_lite\18.1\quartus\sopc_builder\builtin.ipx
+Info: C:\intelfpga_lite\18.1\quartus\sopc_builder\builtin.ipx described 83 plugins, 0 paths, in 0.01 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/**/* matched 8 files in 0.01 seconds
+Info: Reading index C:\intelfpga_lite\18.1\quartus\common\librarian\factories\index.ipx
+Info: C:\intelfpga_lite\18.1\quartus\common\librarian\factories\index.ipx described 151 plugins, 0 paths, in 0.01 seconds
+Info: C:/intelfpga_lite/18.1/quartus/common/librarian/factories/**/* matched 4 files in 0.01 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$IP_IPX_PATH matched 1 files in 0.00 seconds
+Info: C:\intelfpga_lite\18.1\quartus\sopc_builder\bin\root_components.ipx described 0 plugins, 13 paths, in 0.17 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/root_components.ipx matched 1 files in 0.17 seconds
+Progress: 
+Progress: 
+Progress: 
+Info: Running script C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/tbgen.tcl
+Info: send_message Info TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: get_module_property NAME
+Info: send_message Info TB_Gen: System design is: DespertadorCPU
+Info: TB_Gen: System design is: DespertadorCPU
+Info: get_interfaces 
+Info: get_connections 
+Info: get_interface_property btnapagar EXPORT_OF
+Info: get_instance_property btnapagar CLASS_NAME
+Info: get_instance_assignment btnapagar testbench.partner.map.external_connection
+Info: get_interface_property btnhora EXPORT_OF
+Info: get_instance_property btnhora CLASS_NAME
+Info: get_instance_assignment btnhora testbench.partner.map.external_connection
+Info: get_interface_property btnmin EXPORT_OF
+Info: get_instance_property btnmin CLASS_NAME
+Info: get_instance_assignment btnmin testbench.partner.map.external_connection
+Info: get_interface_property buzzer EXPORT_OF
+Info: get_instance_property buzzer CLASS_NAME
+Info: get_instance_assignment buzzer testbench.partner.map.external_connection
+Info: get_interface_property clk EXPORT_OF
+Info: get_instance_property clk_0 CLASS_NAME
+Info: get_instance_assignment clk_0 testbench.partner.map.clk_in
+Info: get_interface_property hora1 EXPORT_OF
+Info: get_instance_property hora1 CLASS_NAME
+Info: get_instance_assignment hora1 testbench.partner.map.external_connection
+Info: get_interface_property hora2 EXPORT_OF
+Info: get_instance_property hora2 CLASS_NAME
+Info: get_instance_assignment hora2 testbench.partner.map.external_connection
+Info: get_interface_property min1 EXPORT_OF
+Info: get_instance_property min1 CLASS_NAME
+Info: get_instance_assignment min1 testbench.partner.map.external_connection
+Info: get_interface_property min2 EXPORT_OF
+Info: get_instance_property min2 CLASS_NAME
+Info: get_instance_assignment min2 testbench.partner.map.external_connection
+Info: get_interface_property reset EXPORT_OF
+Info: get_instance_property clk_0 CLASS_NAME
+Info: get_instance_assignment clk_0 testbench.partner.map.clk_in_reset
+Info: get_interface_property swinicio EXPORT_OF
+Info: get_instance_property swinicio CLASS_NAME
+Info: get_instance_assignment swinicio testbench.partner.map.external_connection
+Info: get_interface_property swmodo EXPORT_OF
+Info: get_instance_property swmodo CLASS_NAME
+Info: get_instance_assignment swmodo testbench.partner.map.external_connection
+Info: send_message Info TB_Gen: Creating testbench system : DespertadorCPU_tb with all standard BFMs
+Info: TB_Gen: Creating testbench system : DespertadorCPU_tb with all standard BFMs
+Info: create_system DespertadorCPU_tb
+Info: add_instance DespertadorCPU_inst DespertadorCPU 
+Info: set_use_testbench_naming_pattern true DespertadorCPU
+Info: get_instance_interfaces DespertadorCPU_inst
+Info: get_instance_interface_property DespertadorCPU_inst btnapagar CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst btnhora CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst btnmin CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst buzzer CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst clk CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst hora1 CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst hora2 CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst min1 CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst min2 CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst reset CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst swinicio CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst swmodo CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst clk CLASS_NAME
+Info: send_message Info TB_Gen: clock_sink found: clk
+Info: TB_Gen: clock_sink found: clk
+Info: get_instance_interface_property DespertadorCPU_inst clk CLASS_NAME
+Info: add_instance DespertadorCPU_inst_clk_bfm altera_avalon_clock_source 
+Info: get_instance_property DespertadorCPU_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value DespertadorCPU_inst clk clockRate
+Info: set_instance_parameter_value DespertadorCPU_inst_clk_bfm CLOCK_RATE 50000000.0
+Info: set_instance_parameter_value DespertadorCPU_inst_clk_bfm CLOCK_UNIT 1
+Info: get_instance_property DespertadorCPU_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst clk CLASS_NAME
+Info: get_instance_interfaces DespertadorCPU_inst_clk_bfm
+Info: get_instance_interface_property DespertadorCPU_inst_clk_bfm clk CLASS_NAME
+Info: add_connection DespertadorCPU_inst_clk_bfm.clk DespertadorCPU_inst.clk
+Info: get_instance_interface_property DespertadorCPU_inst reset CLASS_NAME
+Info: send_message Info TB_Gen: reset_sink found: reset
+Info: TB_Gen: reset_sink found: reset
+Info: get_instance_interface_property DespertadorCPU_inst reset CLASS_NAME
+Info: add_instance DespertadorCPU_inst_reset_bfm altera_avalon_reset_source 
+Info: get_instance_property DespertadorCPU_inst_reset_bfm CLASS_NAME
+Info: get_instance_interface_ports DespertadorCPU_inst reset
+Info: get_instance_interface_port_property DespertadorCPU_inst reset reset_reset_n ROLE
+Info: get_instance_interface_port_property DespertadorCPU_inst reset reset_reset_n ROLE
+Info: set_instance_parameter_value DespertadorCPU_inst_reset_bfm ASSERT_HIGH_RESET 0
+Info: set_instance_parameter_value DespertadorCPU_inst_reset_bfm INITIAL_RESET_CYCLES 50
+Info: get_instance_property DespertadorCPU_inst_reset_bfm CLASS_NAME
+Info: get_instance_interfaces DespertadorCPU_inst_reset_bfm
+Info: get_instance_interface_property DespertadorCPU_inst_reset_bfm clk CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst_reset_bfm reset CLASS_NAME
+Info: get_instance_property DespertadorCPU_inst_reset_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value DespertadorCPU_inst reset associatedClock
+Info: get_instance_interfaces DespertadorCPU_inst_clk_bfm
+Info: get_instance_interface_property DespertadorCPU_inst_clk_bfm clk CLASS_NAME
+Info: send_message Warning TB_Gen: DespertadorCPU_inst_reset_bfm is not associated to any clock; connecting DespertadorCPU_inst_reset_bfm to 'DespertadorCPU_inst_clk_bfm.clk'
+Warning: TB_Gen: DespertadorCPU_inst_reset_bfm is not associated to any clock; connecting DespertadorCPU_inst_reset_bfm to 'DespertadorCPU_inst_clk_bfm.clk'
+Info: add_connection DespertadorCPU_inst_clk_bfm.clk DespertadorCPU_inst_reset_bfm.clk
+Info: get_instance_interface_property DespertadorCPU_inst reset CLASS_NAME
+Info: get_instance_interfaces DespertadorCPU_inst_reset_bfm
+Info: get_instance_interface_property DespertadorCPU_inst_reset_bfm clk CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst_reset_bfm reset CLASS_NAME
+Info: add_connection DespertadorCPU_inst_reset_bfm.reset DespertadorCPU_inst.reset
+Info: get_instance_interface_property DespertadorCPU_inst btnapagar CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: btnapagar
+Info: TB_Gen: conduit_end found: btnapagar
+Info: get_instance_interface_property DespertadorCPU_inst btnapagar CLASS_NAME
+Info: add_instance DespertadorCPU_inst_btnapagar_bfm altera_conduit_bfm 
+Info: get_instance_property DespertadorCPU_inst_btnapagar_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value DespertadorCPU_inst btnapagar associatedClock
+Info: get_instance_interface_parameter_value DespertadorCPU_inst btnapagar associatedReset
+Info: get_instance_interface_ports DespertadorCPU_inst btnapagar
+Info: get_instance_interface_port_property DespertadorCPU_inst btnapagar btnapagar_export ROLE
+Info: get_instance_interface_port_property DespertadorCPU_inst btnapagar btnapagar_export WIDTH
+Info: get_instance_interface_port_property DespertadorCPU_inst btnapagar btnapagar_export DIRECTION
+Info: set_instance_parameter_value DespertadorCPU_inst_btnapagar_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value DespertadorCPU_inst_btnapagar_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value DespertadorCPU_inst_btnapagar_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value DespertadorCPU_inst_btnapagar_bfm SIGNAL_WIDTHS 1
+Info: set_instance_parameter_value DespertadorCPU_inst_btnapagar_bfm SIGNAL_DIRECTIONS output
+Info: get_instance_property DespertadorCPU_inst_btnapagar_bfm CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst btnapagar CLASS_NAME
+Info: get_instance_interfaces DespertadorCPU_inst_btnapagar_bfm
+Info: get_instance_interface_property DespertadorCPU_inst_btnapagar_bfm conduit CLASS_NAME
+Info: add_connection DespertadorCPU_inst_btnapagar_bfm.conduit DespertadorCPU_inst.btnapagar
+Info: get_instance_interface_property DespertadorCPU_inst btnhora CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: btnhora
+Info: TB_Gen: conduit_end found: btnhora
+Info: get_instance_interface_property DespertadorCPU_inst btnhora CLASS_NAME
+Info: add_instance DespertadorCPU_inst_btnhora_bfm altera_conduit_bfm 
+Info: get_instance_property DespertadorCPU_inst_btnhora_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value DespertadorCPU_inst btnhora associatedClock
+Info: get_instance_interface_parameter_value DespertadorCPU_inst btnhora associatedReset
+Info: get_instance_interface_ports DespertadorCPU_inst btnhora
+Info: get_instance_interface_port_property DespertadorCPU_inst btnhora btnhora_export ROLE
+Info: get_instance_interface_port_property DespertadorCPU_inst btnhora btnhora_export WIDTH
+Info: get_instance_interface_port_property DespertadorCPU_inst btnhora btnhora_export DIRECTION
+Info: set_instance_parameter_value DespertadorCPU_inst_btnhora_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value DespertadorCPU_inst_btnhora_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value DespertadorCPU_inst_btnhora_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value DespertadorCPU_inst_btnhora_bfm SIGNAL_WIDTHS 1
+Info: set_instance_parameter_value DespertadorCPU_inst_btnhora_bfm SIGNAL_DIRECTIONS output
+Info: get_instance_property DespertadorCPU_inst_btnhora_bfm CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst btnhora CLASS_NAME
+Info: get_instance_interfaces DespertadorCPU_inst_btnhora_bfm
+Info: get_instance_interface_property DespertadorCPU_inst_btnhora_bfm conduit CLASS_NAME
+Info: add_connection DespertadorCPU_inst_btnhora_bfm.conduit DespertadorCPU_inst.btnhora
+Info: get_instance_interface_property DespertadorCPU_inst btnmin CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: btnmin
+Info: TB_Gen: conduit_end found: btnmin
+Info: get_instance_interface_property DespertadorCPU_inst btnmin CLASS_NAME
+Info: add_instance DespertadorCPU_inst_btnmin_bfm altera_conduit_bfm 
+Info: get_instance_property DespertadorCPU_inst_btnmin_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value DespertadorCPU_inst btnmin associatedClock
+Info: get_instance_interface_parameter_value DespertadorCPU_inst btnmin associatedReset
+Info: get_instance_interface_ports DespertadorCPU_inst btnmin
+Info: get_instance_interface_port_property DespertadorCPU_inst btnmin btnmin_export ROLE
+Info: get_instance_interface_port_property DespertadorCPU_inst btnmin btnmin_export WIDTH
+Info: get_instance_interface_port_property DespertadorCPU_inst btnmin btnmin_export DIRECTION
+Info: set_instance_parameter_value DespertadorCPU_inst_btnmin_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value DespertadorCPU_inst_btnmin_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value DespertadorCPU_inst_btnmin_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value DespertadorCPU_inst_btnmin_bfm SIGNAL_WIDTHS 1
+Info: set_instance_parameter_value DespertadorCPU_inst_btnmin_bfm SIGNAL_DIRECTIONS output
+Info: get_instance_property DespertadorCPU_inst_btnmin_bfm CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst btnmin CLASS_NAME
+Info: get_instance_interfaces DespertadorCPU_inst_btnmin_bfm
+Info: get_instance_interface_property DespertadorCPU_inst_btnmin_bfm conduit CLASS_NAME
+Info: add_connection DespertadorCPU_inst_btnmin_bfm.conduit DespertadorCPU_inst.btnmin
+Info: get_instance_interface_property DespertadorCPU_inst buzzer CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: buzzer
+Info: TB_Gen: conduit_end found: buzzer
+Info: get_instance_interface_property DespertadorCPU_inst buzzer CLASS_NAME
+Info: add_instance DespertadorCPU_inst_buzzer_bfm altera_conduit_bfm 
+Info: get_instance_property DespertadorCPU_inst_buzzer_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value DespertadorCPU_inst buzzer associatedClock
+Info: get_instance_interface_parameter_value DespertadorCPU_inst buzzer associatedReset
+Info: get_instance_interface_ports DespertadorCPU_inst buzzer
+Info: get_instance_interface_port_property DespertadorCPU_inst buzzer buzzer_export ROLE
+Info: get_instance_interface_port_property DespertadorCPU_inst buzzer buzzer_export WIDTH
+Info: get_instance_interface_port_property DespertadorCPU_inst buzzer buzzer_export DIRECTION
+Info: set_instance_parameter_value DespertadorCPU_inst_buzzer_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value DespertadorCPU_inst_buzzer_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value DespertadorCPU_inst_buzzer_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value DespertadorCPU_inst_buzzer_bfm SIGNAL_WIDTHS 1
+Info: set_instance_parameter_value DespertadorCPU_inst_buzzer_bfm SIGNAL_DIRECTIONS input
+Info: get_instance_property DespertadorCPU_inst_buzzer_bfm CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst buzzer CLASS_NAME
+Info: get_instance_interfaces DespertadorCPU_inst_buzzer_bfm
+Info: get_instance_interface_property DespertadorCPU_inst_buzzer_bfm conduit CLASS_NAME
+Info: add_connection DespertadorCPU_inst_buzzer_bfm.conduit DespertadorCPU_inst.buzzer
+Info: get_instance_interface_property DespertadorCPU_inst hora1 CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: hora1
+Info: TB_Gen: conduit_end found: hora1
+Info: get_instance_interface_property DespertadorCPU_inst hora1 CLASS_NAME
+Info: add_instance DespertadorCPU_inst_hora1_bfm altera_conduit_bfm 
+Info: get_instance_property DespertadorCPU_inst_hora1_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value DespertadorCPU_inst hora1 associatedClock
+Info: get_instance_interface_parameter_value DespertadorCPU_inst hora1 associatedReset
+Info: get_instance_interface_ports DespertadorCPU_inst hora1
+Info: get_instance_interface_port_property DespertadorCPU_inst hora1 hora1_export ROLE
+Info: get_instance_interface_port_property DespertadorCPU_inst hora1 hora1_export WIDTH
+Info: get_instance_interface_port_property DespertadorCPU_inst hora1 hora1_export DIRECTION
+Info: set_instance_parameter_value DespertadorCPU_inst_hora1_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value DespertadorCPU_inst_hora1_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value DespertadorCPU_inst_hora1_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value DespertadorCPU_inst_hora1_bfm SIGNAL_WIDTHS 7
+Info: set_instance_parameter_value DespertadorCPU_inst_hora1_bfm SIGNAL_DIRECTIONS input
+Info: get_instance_property DespertadorCPU_inst_hora1_bfm CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst hora1 CLASS_NAME
+Info: get_instance_interfaces DespertadorCPU_inst_hora1_bfm
+Info: get_instance_interface_property DespertadorCPU_inst_hora1_bfm conduit CLASS_NAME
+Info: add_connection DespertadorCPU_inst_hora1_bfm.conduit DespertadorCPU_inst.hora1
+Info: get_instance_interface_property DespertadorCPU_inst hora2 CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: hora2
+Info: TB_Gen: conduit_end found: hora2
+Info: get_instance_interface_property DespertadorCPU_inst hora2 CLASS_NAME
+Info: add_instance DespertadorCPU_inst_hora2_bfm altera_conduit_bfm 
+Info: get_instance_property DespertadorCPU_inst_hora2_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value DespertadorCPU_inst hora2 associatedClock
+Info: get_instance_interface_parameter_value DespertadorCPU_inst hora2 associatedReset
+Info: get_instance_interface_ports DespertadorCPU_inst hora2
+Info: get_instance_interface_port_property DespertadorCPU_inst hora2 hora2_export ROLE
+Info: get_instance_interface_port_property DespertadorCPU_inst hora2 hora2_export WIDTH
+Info: get_instance_interface_port_property DespertadorCPU_inst hora2 hora2_export DIRECTION
+Info: set_instance_parameter_value DespertadorCPU_inst_hora2_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value DespertadorCPU_inst_hora2_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value DespertadorCPU_inst_hora2_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value DespertadorCPU_inst_hora2_bfm SIGNAL_WIDTHS 7
+Info: set_instance_parameter_value DespertadorCPU_inst_hora2_bfm SIGNAL_DIRECTIONS input
+Info: get_instance_property DespertadorCPU_inst_hora2_bfm CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst hora2 CLASS_NAME
+Info: get_instance_interfaces DespertadorCPU_inst_hora2_bfm
+Info: get_instance_interface_property DespertadorCPU_inst_hora2_bfm conduit CLASS_NAME
+Info: add_connection DespertadorCPU_inst_hora2_bfm.conduit DespertadorCPU_inst.hora2
+Info: get_instance_interface_property DespertadorCPU_inst min1 CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: min1
+Info: TB_Gen: conduit_end found: min1
+Info: get_instance_interface_property DespertadorCPU_inst min1 CLASS_NAME
+Info: add_instance DespertadorCPU_inst_min1_bfm altera_conduit_bfm 
+Info: get_instance_property DespertadorCPU_inst_min1_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value DespertadorCPU_inst min1 associatedClock
+Info: get_instance_interface_parameter_value DespertadorCPU_inst min1 associatedReset
+Info: get_instance_interface_ports DespertadorCPU_inst min1
+Info: get_instance_interface_port_property DespertadorCPU_inst min1 min1_export ROLE
+Info: get_instance_interface_port_property DespertadorCPU_inst min1 min1_export WIDTH
+Info: get_instance_interface_port_property DespertadorCPU_inst min1 min1_export DIRECTION
+Info: set_instance_parameter_value DespertadorCPU_inst_min1_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value DespertadorCPU_inst_min1_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value DespertadorCPU_inst_min1_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value DespertadorCPU_inst_min1_bfm SIGNAL_WIDTHS 7
+Info: set_instance_parameter_value DespertadorCPU_inst_min1_bfm SIGNAL_DIRECTIONS input
+Info: get_instance_property DespertadorCPU_inst_min1_bfm CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst min1 CLASS_NAME
+Info: get_instance_interfaces DespertadorCPU_inst_min1_bfm
+Info: get_instance_interface_property DespertadorCPU_inst_min1_bfm conduit CLASS_NAME
+Info: add_connection DespertadorCPU_inst_min1_bfm.conduit DespertadorCPU_inst.min1
+Info: get_instance_interface_property DespertadorCPU_inst min2 CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: min2
+Info: TB_Gen: conduit_end found: min2
+Info: get_instance_interface_property DespertadorCPU_inst min2 CLASS_NAME
+Info: add_instance DespertadorCPU_inst_min2_bfm altera_conduit_bfm 
+Info: get_instance_property DespertadorCPU_inst_min2_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value DespertadorCPU_inst min2 associatedClock
+Info: get_instance_interface_parameter_value DespertadorCPU_inst min2 associatedReset
+Info: get_instance_interface_ports DespertadorCPU_inst min2
+Info: get_instance_interface_port_property DespertadorCPU_inst min2 min2_export ROLE
+Info: get_instance_interface_port_property DespertadorCPU_inst min2 min2_export WIDTH
+Info: get_instance_interface_port_property DespertadorCPU_inst min2 min2_export DIRECTION
+Info: set_instance_parameter_value DespertadorCPU_inst_min2_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value DespertadorCPU_inst_min2_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value DespertadorCPU_inst_min2_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value DespertadorCPU_inst_min2_bfm SIGNAL_WIDTHS 7
+Info: set_instance_parameter_value DespertadorCPU_inst_min2_bfm SIGNAL_DIRECTIONS input
+Info: get_instance_property DespertadorCPU_inst_min2_bfm CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst min2 CLASS_NAME
+Info: get_instance_interfaces DespertadorCPU_inst_min2_bfm
+Info: get_instance_interface_property DespertadorCPU_inst_min2_bfm conduit CLASS_NAME
+Info: add_connection DespertadorCPU_inst_min2_bfm.conduit DespertadorCPU_inst.min2
+Info: get_instance_interface_property DespertadorCPU_inst swinicio CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: swinicio
+Info: TB_Gen: conduit_end found: swinicio
+Info: get_instance_interface_property DespertadorCPU_inst swinicio CLASS_NAME
+Info: add_instance DespertadorCPU_inst_swinicio_bfm altera_conduit_bfm 
+Info: get_instance_property DespertadorCPU_inst_swinicio_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value DespertadorCPU_inst swinicio associatedClock
+Info: get_instance_interface_parameter_value DespertadorCPU_inst swinicio associatedReset
+Info: get_instance_interface_ports DespertadorCPU_inst swinicio
+Info: get_instance_interface_port_property DespertadorCPU_inst swinicio swinicio_export ROLE
+Info: get_instance_interface_port_property DespertadorCPU_inst swinicio swinicio_export WIDTH
+Info: get_instance_interface_port_property DespertadorCPU_inst swinicio swinicio_export DIRECTION
+Info: set_instance_parameter_value DespertadorCPU_inst_swinicio_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value DespertadorCPU_inst_swinicio_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value DespertadorCPU_inst_swinicio_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value DespertadorCPU_inst_swinicio_bfm SIGNAL_WIDTHS 1
+Info: set_instance_parameter_value DespertadorCPU_inst_swinicio_bfm SIGNAL_DIRECTIONS output
+Info: get_instance_property DespertadorCPU_inst_swinicio_bfm CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst swinicio CLASS_NAME
+Info: get_instance_interfaces DespertadorCPU_inst_swinicio_bfm
+Info: get_instance_interface_property DespertadorCPU_inst_swinicio_bfm conduit CLASS_NAME
+Info: add_connection DespertadorCPU_inst_swinicio_bfm.conduit DespertadorCPU_inst.swinicio
+Info: get_instance_interface_property DespertadorCPU_inst swmodo CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: swmodo
+Info: TB_Gen: conduit_end found: swmodo
+Info: get_instance_interface_property DespertadorCPU_inst swmodo CLASS_NAME
+Info: add_instance DespertadorCPU_inst_swmodo_bfm altera_conduit_bfm 
+Info: get_instance_property DespertadorCPU_inst_swmodo_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value DespertadorCPU_inst swmodo associatedClock
+Info: get_instance_interface_parameter_value DespertadorCPU_inst swmodo associatedReset
+Info: get_instance_interface_ports DespertadorCPU_inst swmodo
+Info: get_instance_interface_port_property DespertadorCPU_inst swmodo swmodo_export ROLE
+Info: get_instance_interface_port_property DespertadorCPU_inst swmodo swmodo_export WIDTH
+Info: get_instance_interface_port_property DespertadorCPU_inst swmodo swmodo_export DIRECTION
+Info: set_instance_parameter_value DespertadorCPU_inst_swmodo_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value DespertadorCPU_inst_swmodo_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value DespertadorCPU_inst_swmodo_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value DespertadorCPU_inst_swmodo_bfm SIGNAL_WIDTHS 1
+Info: set_instance_parameter_value DespertadorCPU_inst_swmodo_bfm SIGNAL_DIRECTIONS output
+Info: get_instance_property DespertadorCPU_inst_swmodo_bfm CLASS_NAME
+Info: get_instance_interface_property DespertadorCPU_inst swmodo CLASS_NAME
+Info: get_instance_interfaces DespertadorCPU_inst_swmodo_bfm
+Info: get_instance_interface_property DespertadorCPU_inst_swmodo_bfm conduit CLASS_NAME
+Info: add_connection DespertadorCPU_inst_swmodo_bfm.conduit DespertadorCPU_inst.swmodo
+Info: send_message Info TB_Gen: Saving testbench system: DespertadorCPU_tb.qsys
+Info: TB_Gen: Saving testbench system: DespertadorCPU_tb.qsys
+Info: save_system DespertadorCPU_tb.qsys
+Info: send_message Info TB_Gen: TBGEN SUCCESSFUL
+Info: TB_Gen: TBGEN SUCCESSFUL
+Info: Testbench system: C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/DespertadorCPU_tb.qsys
+Info: Done
+Info: qsys-generate C:\Users\DELL\Desktop\DespertadorCPU\DespertadorCPU.qsys --simulation=VERILOG --allow-mixed-language-simulation --testbench=STANDARD --testbench-simulation=VERILOG --allow-mixed-language-testbench-simulation --output-directory=C:\Users\DELL\Desktop\DespertadorCPU\DespertadorCPU\testbench\DespertadorCPU_tb\simulation --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading testbench/DespertadorCPU_tb.qsys
+Progress: Reading input file
+Progress: Adding DespertadorCPU_inst [DespertadorCPU 1.0]
+Progress: Parameterizing module DespertadorCPU_inst
+Progress: Adding DespertadorCPU_inst_btnapagar_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module DespertadorCPU_inst_btnapagar_bfm
+Progress: Adding DespertadorCPU_inst_btnhora_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module DespertadorCPU_inst_btnhora_bfm
+Progress: Adding DespertadorCPU_inst_btnmin_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module DespertadorCPU_inst_btnmin_bfm
+Progress: Adding DespertadorCPU_inst_buzzer_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module DespertadorCPU_inst_buzzer_bfm
+Progress: Adding DespertadorCPU_inst_clk_bfm [altera_avalon_clock_source 18.1]
+Progress: Parameterizing module DespertadorCPU_inst_clk_bfm
+Progress: Adding DespertadorCPU_inst_hora1_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module DespertadorCPU_inst_hora1_bfm
+Progress: Adding DespertadorCPU_inst_hora2_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module DespertadorCPU_inst_hora2_bfm
+Progress: Adding DespertadorCPU_inst_min1_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module DespertadorCPU_inst_min1_bfm
+Progress: Adding DespertadorCPU_inst_min2_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module DespertadorCPU_inst_min2_bfm
+Progress: Adding DespertadorCPU_inst_reset_bfm [altera_avalon_reset_source 18.1]
+Progress: Parameterizing module DespertadorCPU_inst_reset_bfm
+Progress: Adding DespertadorCPU_inst_swinicio_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module DespertadorCPU_inst_swinicio_bfm
+Progress: Adding DespertadorCPU_inst_swmodo_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module DespertadorCPU_inst_swmodo_bfm
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DespertadorCPU_tb.DespertadorCPU_inst.btnapagar: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DespertadorCPU_tb.DespertadorCPU_inst.btnhora: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DespertadorCPU_tb.DespertadorCPU_inst.btnmin: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DespertadorCPU_tb.DespertadorCPU_inst.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: DespertadorCPU_tb.DespertadorCPU_inst.swinicio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DespertadorCPU_tb.DespertadorCPU_inst.swmodo: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: DespertadorCPU_tb.DespertadorCPU_inst_clk_bfm: Elaborate: altera_clock_source
+Info: DespertadorCPU_tb.DespertadorCPU_inst_clk_bfm:            $Revision: #1 $
+Info: DespertadorCPU_tb.DespertadorCPU_inst_clk_bfm:            $Date: 2018/07/18 $
+Info: DespertadorCPU_tb.DespertadorCPU_inst_reset_bfm: Elaborate: altera_reset_source
+Info: DespertadorCPU_tb.DespertadorCPU_inst_reset_bfm:            $Revision: #1 $
+Info: DespertadorCPU_tb.DespertadorCPU_inst_reset_bfm:            $Date: 2018/07/18 $
+Info: DespertadorCPU_tb.DespertadorCPU_inst_reset_bfm: Reset is negatively asserted.
+Info: DespertadorCPU_tb: Generating DespertadorCPU_tb "DespertadorCPU_tb" for SIM_VERILOG
+Info: DespertadorCPU_inst: "DespertadorCPU_tb" instantiated DespertadorCPU "DespertadorCPU_inst"
+Info: DespertadorCPU_inst_btnapagar_bfm: "DespertadorCPU_tb" instantiated altera_conduit_bfm "DespertadorCPU_inst_btnapagar_bfm"
+Info: DespertadorCPU_inst_buzzer_bfm: "DespertadorCPU_tb" instantiated altera_conduit_bfm "DespertadorCPU_inst_buzzer_bfm"
+Info: Reusing file C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/DespertadorCPU_tb/simulation/submodules/verbosity_pkg.sv
+Info: DespertadorCPU_inst_clk_bfm: "DespertadorCPU_tb" instantiated altera_avalon_clock_source "DespertadorCPU_inst_clk_bfm"
+Info: Reusing file C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/DespertadorCPU_tb/simulation/submodules/verbosity_pkg.sv
+Info: DespertadorCPU_inst_hora1_bfm: "DespertadorCPU_tb" instantiated altera_conduit_bfm "DespertadorCPU_inst_hora1_bfm"
+Info: Reusing file C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/DespertadorCPU_tb/simulation/submodules/verbosity_pkg.sv
+Info: DespertadorCPU_inst_reset_bfm: "DespertadorCPU_tb" instantiated altera_avalon_reset_source "DespertadorCPU_inst_reset_bfm"
+Info: Reusing file C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/DespertadorCPU_tb/simulation/submodules/verbosity_pkg.sv
+Info: btnapagar: Starting RTL generation for module 'DespertadorCPU_btnapagar'
+Info: btnapagar:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DespertadorCPU_btnapagar --dir=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0007_btnapagar_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0007_btnapagar_gen//DespertadorCPU_btnapagar_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0007_btnapagar_gen/  ]
+Info: btnapagar: Done RTL generation for module 'DespertadorCPU_btnapagar'
+Info: btnapagar: "DespertadorCPU_inst" instantiated altera_avalon_pio "btnapagar"
+Info: buzzer: Starting RTL generation for module 'DespertadorCPU_buzzer'
+Info: buzzer:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DespertadorCPU_buzzer --dir=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0008_buzzer_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0008_buzzer_gen//DespertadorCPU_buzzer_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0008_buzzer_gen/  ]
+Info: buzzer: Done RTL generation for module 'DespertadorCPU_buzzer'
+Info: buzzer: "DespertadorCPU_inst" instantiated altera_avalon_pio "buzzer"
+Info: cpu: "DespertadorCPU_inst" instantiated altera_nios2_gen2 "cpu"
+Info: hora1: Starting RTL generation for module 'DespertadorCPU_hora1'
+Info: hora1:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DespertadorCPU_hora1 --dir=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0009_hora1_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0009_hora1_gen//DespertadorCPU_hora1_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0009_hora1_gen/  ]
+Info: hora1: Done RTL generation for module 'DespertadorCPU_hora1'
+Info: hora1: "DespertadorCPU_inst" instantiated altera_avalon_pio "hora1"
+Info: jtag_uart_0: Starting RTL generation for module 'DespertadorCPU_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=DespertadorCPU_jtag_uart_0 --dir=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0010_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0010_jtag_uart_0_gen//DespertadorCPU_jtag_uart_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0010_jtag_uart_0_gen/  ]
+Info: jtag_uart_0: Done RTL generation for module 'DespertadorCPU_jtag_uart_0'
+Info: jtag_uart_0: "DespertadorCPU_inst" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: memory: Starting RTL generation for module 'DespertadorCPU_memory'
+Info: memory:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=DespertadorCPU_memory --dir=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0011_memory_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0011_memory_gen//DespertadorCPU_memory_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0011_memory_gen/  ]
+Info: memory: Done RTL generation for module 'DespertadorCPU_memory'
+Info: memory: "DespertadorCPU_inst" instantiated altera_avalon_onchip_memory2 "memory"
+Info: timer_0: Starting RTL generation for module 'DespertadorCPU_timer_0'
+Info: timer_0:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=DespertadorCPU_timer_0 --dir=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0012_timer_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0012_timer_0_gen//DespertadorCPU_timer_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0012_timer_0_gen/  ]
+Info: timer_0: Done RTL generation for module 'DespertadorCPU_timer_0'
+Info: timer_0: "DespertadorCPU_inst" instantiated altera_avalon_timer "timer_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "DespertadorCPU_inst" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "DespertadorCPU_inst" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "DespertadorCPU_inst" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'DespertadorCPU_cpu_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=DespertadorCPU_cpu_cpu --dir=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0015_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0015_cpu_gen//DespertadorCPU_cpu_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0015_cpu_gen/  ]
+Info: cpu: # 2024.08.13 14:27:13 (*) Starting Nios II generation
+Info: cpu: # 2024.08.13 14:27:13 (*)   Checking for plaintext license.
+Info: cpu: # 2024.08.13 14:27:14 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
+Info: cpu: # 2024.08.13 14:27:14 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2024.08.13 14:27:14 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2024.08.13 14:27:14 (*)   Plaintext license not found.
+Info: cpu: # 2024.08.13 14:27:14 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2024.08.13 14:27:14 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2024.08.13 14:27:14 (*)   Creating all objects for CPU
+Info: cpu: # 2024.08.13 14:27:15 (*)   Creating 'C:/Users/DELL/AppData/Local/Temp/alt9948_4715180959023003545.dir/0015_cpu_gen//DespertadorCPU_cpu_cpu_nios2_waves.do'
+Info: cpu: # 2024.08.13 14:27:15 (*)   Generating RTL from CPU objects
+Info: cpu: # 2024.08.13 14:27:15 (*)   Creating plain-text RTL
+Info: cpu: # 2024.08.13 14:27:15 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'DespertadorCPU_cpu_cpu'
+Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_003"
+Info: Reusing file C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/DespertadorCPU_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_003"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/DespertadorCPU_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/DespertadorCPU_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: DespertadorCPU_tb: Done "DespertadorCPU_tb" with 37 modules, 58 files
+Info: qsys-generate succeeded.
+Info: sim-script-gen --spd=C:\Users\DELL\Desktop\DespertadorCPU\DespertadorCPU_tb.spd --output-directory=C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\DELL\Desktop\DespertadorCPU\DespertadorCPU_tb.spd --output-directory=C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	36 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/DELL/Desktop/DespertadorCPU/DespertadorCPU/testbench/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create testbench Platform Designer system
