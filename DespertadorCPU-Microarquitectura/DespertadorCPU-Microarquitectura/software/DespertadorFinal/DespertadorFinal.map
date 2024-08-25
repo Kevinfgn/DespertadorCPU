@@ -1,0 +1,639 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                              obj/default/hello_world_small.o (__divsi3)
+../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic.o)
+                              obj/default/hello_world_small.o (alt_ic_isr_register)
+../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                              ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_handler)
+../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic.o) (alt_irq_active)
+../DespertadorFinal_bsp/\libhal_bsp.a(alt_load.o)
+                              ../DespertadorFinal_bsp//obj/HAL/src/crt0.o (alt_load)
+../DespertadorFinal_bsp/\libhal_bsp.a(alt_main.o)
+                              ../DespertadorFinal_bsp//obj/HAL/src/crt0.o (alt_main)
+../DespertadorFinal_bsp/\libhal_bsp.a(alt_putstr.o)
+                              obj/default/hello_world_small.o (alt_putstr)
+../DespertadorFinal_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              ../DespertadorFinal_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+../DespertadorFinal_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              ../DespertadorFinal_bsp/\libhal_bsp.a(alt_putstr.o) (altera_avalon_jtag_uart_write)
+../DespertadorFinal_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              ../DespertadorFinal_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+../DespertadorFinal_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              ../DespertadorFinal_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+../DespertadorFinal_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                              ../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o) (alt_instruction_exception_entry)
+../DespertadorFinal_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                              ../DespertadorFinal_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
+c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                              ../DespertadorFinal_bsp/\libhal_bsp.a(alt_putstr.o) (strlen)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x0000000000001000 0x0000000000000020
+memory           0x0000000000001020 0x0000000000000fe0
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD ../DespertadorFinal_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/hello_world_small.o
+LOAD c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libstdc++.a
+LOAD c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+LOAD c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a
+START GROUP
+LOAD c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a
+LOAD c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a
+LOAD ../DespertadorFinal_bsp/\libhal_bsp.a
+LOAD c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+END GROUP
+LOAD c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a
+                0x0000000000001000                __alt_mem_memory = 0x1000
+
+.entry          0x0000000000001000       0x20
+ *(.entry)
+ .entry         0x0000000000001000       0x20 ../DespertadorFinal_bsp//obj/HAL/src/crt0.o
+                0x0000000000001000                __reset
+                0x000000000000100c                _exit
+
+.exceptions     0x0000000000001020      0x160
+                0x0000000000001020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x0000000000001020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x0000000000001020        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x0000000000001020                alt_irq_entry
+ .exceptions.entry.label
+                0x0000000000001020        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x0000000000001020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x0000000000001020       0x54 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x0000000000001074       0x10 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x0000000000001084        0x4 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x0000000000001088        0x4 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x000000000000108c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x000000000000108c        0x8 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x0000000000001094       0x14 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x00000000000010a8        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x00000000000010a8        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x00000000000010a8       0x54 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x00000000000010fc       0x60 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x00000000000010fc                alt_irq_handler
+ .exceptions    0x000000000000115c       0x24 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x000000000000115c                alt_instruction_exception_entry
+                0x0000000000001180                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x0000000000001020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x0000000000001180      0x8b0
+                [!provide]                        PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000001180       0x3c ../DespertadorFinal_bsp//obj/HAL/src/crt0.o
+                0x0000000000001180                _start
+ .text          0x00000000000011bc      0x2cc obj/default/hello_world_small.o
+                0x00000000000011c8                actualizar_datos
+                0x0000000000001318                inicio_reloj
+                0x0000000000001390                sumar_dato
+                0x0000000000001428                cambiar_numero
+                0x000000000000144c                init_timer_interrupt
+ .text.startup  0x0000000000001488       0xc4 obj/default/hello_world_small.o
+                0x0000000000001488                main
+ .text          0x000000000000154c      0x1b4 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                0x000000000000154c                __divsi3
+                0x00000000000015d0                __modsi3
+                0x0000000000001644                __udivsi3
+                0x00000000000016a8                __umodsi3
+ .text          0x0000000000001700       0x8c ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic.o)
+                0x0000000000001700                alt_ic_isr_register
+                0x0000000000001704                alt_ic_irq_enable
+                0x000000000000173c                alt_ic_irq_disable
+                0x0000000000001774                alt_ic_irq_enabled
+ .text          0x000000000000178c       0x68 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                0x000000000000178c                alt_iic_isr_register
+ .text          0x00000000000017f4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x00000000000017f4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x00000000000017f4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x00000000000017f4       0xe0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_load.o)
+                0x00000000000017f4                alt_load
+ .text          0x00000000000018d4       0x2c ../DespertadorFinal_bsp/\libhal_bsp.a(alt_main.o)
+                0x00000000000018d4                alt_main
+ .text          0x0000000000001900       0x38 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_putstr.o)
+                0x0000000000001900                alt_putstr
+ .text          0x0000000000001938       0x24 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0000000000001938                alt_irq_init
+                0x0000000000001958                alt_sys_init
+ .text          0x000000000000195c       0x34 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x000000000000195c                altera_avalon_jtag_uart_write
+ .text          0x0000000000001990        0x4 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x0000000000001990                alt_dcache_flush_all
+ .text          0x0000000000001994        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x0000000000001994        0x4 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x0000000000001994                alt_icache_flush_all
+ .text          0x0000000000001998       0x74 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000000001998                alt_exception_cause_generated_bad_addr
+ .text          0x0000000000001a0c        0x8 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x0000000000001a0c                altera_nios2_gen2_irq_init
+ .text          0x0000000000001a14        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .text.strlen   0x0000000000001a14       0x1c c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                0x0000000000001a14                strlen
+ *(.gnu.warning.*)
+ *(.fini)
+                [!provide]                        PROVIDE (__etext, ABSOLUTE (.))
+                [!provide]                        PROVIDE (_etext, ABSOLUTE (.))
+                [!provide]                        PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x0000000000001a30                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                [!provide]                        PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                [!provide]                        PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                [!provide]                        PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x0000000000001a30                . = ALIGN (0x4)
+
+.rodata         0x0000000000001a30        0xc
+                0x0000000000001a30                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x0000000000001a30                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000000001a30        0xa obj/default/hello_world_small.o
+ *(.rodata1)
+                0x0000000000001a3c                . = ALIGN (0x4)
+ *fill*         0x0000000000001a3a        0x2 
+                0x0000000000001a3c                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x0000000000001a30                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x0000000000001a3c       0x38 load address 0x0000000000001a74
+                0x0000000000001a3c                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x0000000000001a3c                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp//obj/HAL/src/crt0.o
+ .data          0x0000000000001a3c        0x0 obj/default/hello_world_small.o
+ .data          0x0000000000001a3c        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic.o)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_putstr.o)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .data          0x0000000000001a3c        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x0000000000001a3c        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                0x0000000000009a3c                _gp = ABSOLUTE ((. + 0x8000))
+                [!provide]                        PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x0000000000001a3c       0x30 obj/default/hello_world_small.o
+                0x0000000000001a3c                ultimo_estado_swinicio
+                0x0000000000001a3e                ultimo_estado_btnmin
+                0x0000000000001a40                ultimo_estado_btnhora
+                0x0000000000001a44                swinicio
+                0x0000000000001a48                buzzer
+                0x0000000000001a4c                swmodo
+                0x0000000000001a50                btnapagar
+                0x0000000000001a54                btnmin
+                0x0000000000001a58                btnhora
+                0x0000000000001a5c                min2
+                0x0000000000001a60                min1
+                0x0000000000001a64                hora2
+                0x0000000000001a68                hora1
+ .sdata         0x0000000000001a6c        0x4 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x0000000000001a6c                alt_priority_mask
+ .sdata         0x0000000000001a70        0x4 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0000000000001a70                jtag_uart_0
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x0000000000001a74                . = ALIGN (0x4)
+                0x0000000000001a74                _edata = ABSOLUTE (.)
+                [!provide]                        PROVIDE (edata, ABSOLUTE (.))
+                0x0000000000001a74                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x0000000000001a74                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x0000000000001aac      0x118
+                0x0000000000001aac                __bss_start = ABSOLUTE (.)
+                [!provide]                        PROVIDE (__sbss_start, ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0000000000001aac        0x4 obj/default/hello_world_small.o
+                0x0000000000001aac                min
+                0x0000000000001aae                hora
+ .sbss          0x0000000000001ab0        0x4 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x0000000000001ab0                alt_irq_active
+ .sbss          0x0000000000001ab4        0xc ../DespertadorFinal_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000000000001ab4                alt_envp
+                0x0000000000001ab8                alt_argv
+                0x0000000000001abc                alt_argc
+ .sbss          0x0000000000001ac0        0x4 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000000001ac0                alt_instruction_exception_handler
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                [!provide]                        PROVIDE (__sbss_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp//obj/HAL/src/crt0.o
+ .bss           0x0000000000001ac4        0x0 obj/default/hello_world_small.o
+ .bss           0x0000000000001ac4        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic.o)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_putstr.o)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .bss           0x0000000000001ac4        0x0 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x0000000000001ac4        0x0 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ *(COMMON)
+ COMMON         0x0000000000001ac4      0x100 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x0000000000001ac4                alt_irq
+                0x0000000000001bc4                . = ALIGN (0x4)
+                0x0000000000001bc4                __bss_end = ABSOLUTE (.)
+
+.memory         0x0000000000001bc4        0x0
+                [!provide]                        PROVIDE (_alt_partition_memory_start, ABSOLUTE (.))
+ *(.memory .memory. memory.*)
+                0x0000000000001bc4                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_memory_end, ABSOLUTE (.))
+                0x0000000000001bc4                _end = ABSOLUTE (.)
+                0x0000000000001bc4                end = ABSOLUTE (.)
+                0x0000000000001bc4                __alt_stack_base = ABSOLUTE (.)
+                [!provide]                        PROVIDE (_alt_partition_memory_load_addr, LOADADDR (.memory))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x23
+ *(.comment)
+ .comment       0x0000000000000000       0x23 obj/default/hello_world_small.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000023       0x24 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .comment       0x0000000000000023       0x24 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic.o)
+ .comment       0x0000000000000023       0x24 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x0000000000000023       0x24 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x0000000000000023       0x24 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x0000000000000023       0x24 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x0000000000000023       0x24 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x0000000000000023       0x24 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_putstr.o)
+ .comment       0x0000000000000023       0x24 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x0000000000000023       0x24 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x0000000000000023       0x24 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x0000000000000023       0x24 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x0000000000000023       0x24 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .comment       0x0000000000000023       0x24 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x298
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 ../DespertadorFinal_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000028       0x28 obj/default/hello_world_small.o
+ .debug_aranges
+                0x0000000000000050       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_aranges
+                0x0000000000000070       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x0000000000000090       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x00000000000000b0       0x30 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x00000000000000e0       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x0000000000000100       0x18 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_aranges
+                0x0000000000000118       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x0000000000000138       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x0000000000000158       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_aranges
+                0x0000000000000178       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x0000000000000198       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x00000000000001b8       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000000000001d8       0x38 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x0000000000000210       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x0000000000000230       0x28 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_aranges
+                0x0000000000000258       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_aranges
+                0x0000000000000278       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x1d81
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0xad ../DespertadorFinal_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x00000000000000ad      0x4b8 obj/default/hello_world_small.o
+ .debug_info    0x0000000000000565      0x2c6 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_info    0x000000000000082b      0x38a ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x0000000000000bb5      0x232 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x0000000000000de7       0xb6 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x0000000000000e9d      0x184 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x0000000000001021       0x88 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x00000000000010a9      0x1c9 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x0000000000001272      0x169 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x00000000000013db      0x13a ../DespertadorFinal_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_info    0x0000000000001515      0x19d ../DespertadorFinal_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00000000000016b2      0x197 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x0000000000001849       0x92 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x00000000000018db       0xbc ../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x0000000000001997       0x92 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x0000000000001a29      0x1fd ../DespertadorFinal_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_info    0x0000000000001c26       0x92 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x0000000000001cb8       0xc9 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_abbrev   0x0000000000000000      0xebe
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x12 ../DespertadorFinal_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000012      0x236 obj/default/hello_world_small.o
+ .debug_abbrev  0x0000000000000248      0x10e c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x0000000000000356      0x1a0 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x00000000000004f6      0x19c ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x0000000000000692       0x12 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x00000000000006a4      0x120 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x00000000000007c4       0x40 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x0000000000000804       0xd8 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00000000000008dc       0xee ../DespertadorFinal_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000000000009ca       0xd3 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_abbrev  0x0000000000000a9d      0x10e ../DespertadorFinal_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000000000000bab       0xd5 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x0000000000000c80       0x42 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x0000000000000cc2       0x12 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x0000000000000cd4       0x42 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x0000000000000d16       0xe7 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_abbrev  0x0000000000000dfd       0x42 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x0000000000000e3f       0x7f c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_line     0x0000000000000000      0xde1
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x66 ../DespertadorFinal_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x0000000000000066      0x18f obj/default/hello_world_small.o
+ .debug_line    0x00000000000001f5      0x105 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_line    0x00000000000002fa       0xf1 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x00000000000003eb       0xd6 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x00000000000004c1       0x6b ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x000000000000052c       0xa5 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x00000000000005d1       0x50 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x0000000000000621       0xa4 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x00000000000006c5       0xbd ../DespertadorFinal_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x0000000000000782       0x9b ../DespertadorFinal_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_line    0x000000000000081d      0x11a ../DespertadorFinal_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000000000000937       0xf0 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x0000000000000a27       0x4e ../DespertadorFinal_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x0000000000000a75       0xb3 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x0000000000000b28       0x4e ../DespertadorFinal_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x0000000000000b76       0xbf ../DespertadorFinal_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_line    0x0000000000000c35       0x50 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x0000000000000c85      0x15c c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_frame    0x0000000000000000      0x388
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0xec obj/default/hello_world_small.o
+ .debug_frame   0x00000000000000ec       0x50 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_frame   0x000000000000013c       0x50 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x000000000000018c       0x30 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x00000000000001bc       0x34 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x00000000000001f0       0x30 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x0000000000000220       0x2c ../DespertadorFinal_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x000000000000024c       0x30 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_frame   0x000000000000027c       0x3c ../DespertadorFinal_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x00000000000002b8       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x00000000000002d8       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000000000002f8       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x0000000000000318       0x30 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_frame   0x0000000000000348       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_frame   0x0000000000000368       0x20 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_str      0x0000000000000000      0xf7c
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x2dc obj/default/hello_world_small.o
+                                        0x33f (size before relaxing)
+ .debug_str     0x00000000000002dc      0x187 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                                        0x1d2 (size before relaxing)
+ .debug_str     0x0000000000000463      0x17b ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic.o)
+                                        0x292 (size before relaxing)
+ .debug_str     0x00000000000005de       0x37 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                                        0x24c (size before relaxing)
+ .debug_str     0x0000000000000615       0x3a ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                                        0x1d6 (size before relaxing)
+ .debug_str     0x000000000000064f       0x17 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                                        0x179 (size before relaxing)
+ .debug_str     0x0000000000000666      0x113 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_load.o)
+                                        0x27b (size before relaxing)
+ .debug_str     0x0000000000000779       0x8f ../DespertadorFinal_bsp/\libhal_bsp.a(alt_main.o)
+                                        0x1f4 (size before relaxing)
+ .debug_str     0x0000000000000808       0x66 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_putstr.o)
+                                        0x1d1 (size before relaxing)
+ .debug_str     0x000000000000086e       0xb9 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                        0x29d (size before relaxing)
+ .debug_str     0x0000000000000927       0x32 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                        0x254 (size before relaxing)
+ .debug_str     0x0000000000000959       0x1f ../DespertadorFinal_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                        0x194 (size before relaxing)
+ .debug_str     0x0000000000000978       0x1f ../DespertadorFinal_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                        0x194 (size before relaxing)
+ .debug_str     0x0000000000000997      0x48b ../DespertadorFinal_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                                        0x5df (size before relaxing)
+ .debug_str     0x0000000000000e22       0x20 ../DespertadorFinal_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                                        0x19b (size before relaxing)
+ .debug_str     0x0000000000000e42      0x13a c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                                        0x1e5 (size before relaxing)
+
+.debug_loc      0x0000000000000000      0xb32
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x189 obj/default/hello_world_small.o
+ .debug_loc     0x0000000000000189      0x4ce c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_loc     0x0000000000000657      0x170 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_loc     0x00000000000007c7      0x193 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_loc     0x000000000000095a       0x72 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loc     0x00000000000009cc       0x37 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_loc     0x0000000000000a03       0x21 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x0000000000000a24       0x8b ../DespertadorFinal_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x0000000000000aaf       0x65 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_loc     0x0000000000000b14       0x1e c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x10
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x10 ../DespertadorFinal_bsp//obj/HAL/src/crt0.o
+                0x0000000000002000                __alt_data_end = 0x2000
+                0x0000000000002000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                [!provide]                        PROVIDE (__alt_stack_limit, __alt_stack_base)
+                [!provide]                        PROVIDE (__alt_heap_start, end)
+                [!provide]                        PROVIDE (__alt_heap_limit, 0x2000)
+OUTPUT(DespertadorFinal.elf elf32-littlenios2)
+
+.debug_ranges   0x0000000000000000      0x170
+ .debug_ranges  0x0000000000000000       0x20 ../DespertadorFinal_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x0000000000000020       0x18 obj/default/hello_world_small.o
+ .debug_ranges  0x0000000000000038       0x60 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_ranges  0x0000000000000098       0x28 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x00000000000000c0       0x10 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_ranges  0x00000000000000d0       0x48 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_ranges  0x0000000000000118       0x30 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_ranges  0x0000000000000148       0x18 ../DespertadorFinal_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_ranges  0x0000000000000160       0x10 c:/intelfpga/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)

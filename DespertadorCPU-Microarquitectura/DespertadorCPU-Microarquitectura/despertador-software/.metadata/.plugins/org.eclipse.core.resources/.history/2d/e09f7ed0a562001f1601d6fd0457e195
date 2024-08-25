@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <system.h>
+#include <sys/alt_irq.h>
+#include <altera_avalon_timer_regs.h>
+#include "sys/alt_stdio.h"
+
+void init_timer_interrupt (void);
+static void timer_isr (void * context, alt_u32 id);
+
+
+volatile unsigned short * hora1= (short *) 0x30b0;
+volatile unsigned short * hora2= (short *) 0x30a0;
+volatile unsigned short * min1= (short *) 0x3090;
+volatile unsigned short * min2= (short *) 0x3080;
+volatile unsigned short * btnhora= (short *) 0x3070;
+volatile unsigned short * btnmin= (short *) 0x3060;
+volatile unsigned short * btnapagar= (short *) 0x3050;
+volatile unsigned short * swmodo= (short *) 0x3040;
+volatile unsigned short * buzzer= (short *) 0x3030;
+volatile unsigned short * swinicio= (short *) 0x3020;
+
+
+int main(void){
+	init_timer_interrupt();
+	while(1)
+	{
+		alt_putstr("Hola, soy Cortana!!");
+		//*hora1 = 48;
+		if(*btnhora == 0x01){
+			*hora1 = 48
+		}
+	}
+	return 0;
+}
+
+
+void init_timer_interrupt(void){
+	alt_ic_isr_register(TIMER_0_IRQ_INTERRUPT_CONTROLLER_ID, TIMER_0_IRQ, (void *)timer_isr, NULL, 0x0);
+
+	IOWR_ALTERA_AVALON_TIMER_CONTROL(TIMER_0_BASE,
+			ALTERA_AVALON_TIMER_CONTROL_CONT_MSK |
+			ALTERA_AVALON_TIMER_CONTROL_START_MSK |
+			ALTERA_AVALON_TIMER_CONTROL_ITO_MSK);
+}
+
+
+static void timer_isr(void * context, alt_u32 id){
+	int seg = 0;
+
+	IOWR_ALTERA_AVALON_TIMER_STATUS(TIMER_0_BASE,0);
+
+}
+
+
