@@ -1,4 +1,4 @@
-/* Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition */
+/* Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition */
 JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/Users/DELL/Desktop/DespertadorCPU/output_files/") File("DespertadorCPU.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/output_files/") File("DespertadorCPU.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

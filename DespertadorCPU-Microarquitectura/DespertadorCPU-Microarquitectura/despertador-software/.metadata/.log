@@ -287,3 +287,186 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 
 !ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:00:00.077
 !MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:17:06.197
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:17:10.195
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:20:05.612
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:20:08.471
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:23:46.000
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:23:46.898
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:23:49.582
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:28:00.009
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:28:01.009
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:28:04.833
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:29:42.657
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:29:43.550
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:29:46.131
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:31:51.919
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:31:52.878
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:31:55.538
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:35:53.019
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:35:55.782
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:37:57.992
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:38:00.652
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:39:04.744
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:39:07.298
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:39:54.388
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:39:57.532
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:40:08.426
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:40:09.344
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:40:11.922
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:40:51.649
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:40:54.352
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:41:43.626
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:41:46.277
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:43:22.159
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:43:24.938
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:44:11.325
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:44:12.209
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:44:15.458
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:51:56.856
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:51:57.698
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:52:00.460
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:53:01.283
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:53:02.147
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:53:04.838
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:55:08.046
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:55:09.043
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:55:13.070
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:58:03.378
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:58:06.083
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:58:56.685
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:58:59.526
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:59:30.406
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:59:31.287
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 02:59:33.927
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 03:09:57.772
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 03:09:58.647
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 03:10:01.671
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 03:11:42.581
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 03:11:43.402
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 03:11:46.196
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 03:14:16.315
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 03:14:17.115
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-08-25 03:14:19.672
+!MESSAGE Executing: [C:/intelfpga/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal/DespertadorFinal.elf]

@@ -26,8 +26,6 @@ int seg = 0;
 unsigned short ultimo_estado_btnhora = 0xFF;
 unsigned short ultimo_estado_btnmin = 0xFF;
 unsigned short ultimo_estado_swinicio = 0xFF;
-unsigned short ultimo_estado_swmodo = 0xFF;
-
 short inicio = 0;
 unsigned short mostrar_animacion = 1;
 unsigned short animacion = 0;
@@ -51,7 +49,6 @@ int main(void){
 		unsigned short estado_actual_btnhora = *btnhora;
 		unsigned short estado_actual_btnmin = *btnmin;
 		unsigned short estado_actual_swinicio = *swinicio;
-		unsigned short estado_actual_swinicio = *swmodo;
 		//*hora1 = 48;
 		if(modo == 0){
 			if((ultimo_estado_btnhora & 0x01) && (estado_actual_btnhora == 0x00)){
@@ -81,7 +78,7 @@ int main(void){
 				min_seteada = hora;
 			}
 
-			if((ultimo_estado_swinicio & 0x00) && (estado_actual_swinicio == 0x01)){
+			if((ultimo_estado_swinicio & 0x01) && (estado_actual_swinicio == 0x00)){
 				inicio = 0;
 			}
 
@@ -201,14 +198,7 @@ void init_timer_interrupt(void){
 			ALTERA_AVALON_TIMER_CONTROL_ITO_MSK);
 }
 
-int revisar_igualdad(){
-	if((hora_actual == hora_seteada) && (min_actual == min_seteada)){
-		return 1;
-	}
-	else{
-		return 0;
-	}
-}
+
 
 static void timer_isr(void * context, alt_u32 id){
 

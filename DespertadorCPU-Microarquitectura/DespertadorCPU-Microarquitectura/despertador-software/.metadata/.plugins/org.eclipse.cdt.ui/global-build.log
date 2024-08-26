@@ -2635,3 +2635,2606 @@ hello_world_small.c:191:6: warning: unused variable 'seg' [-Wunused-variable]
   int seg = 0;
       ^
 make: *** [obj/default/hello_world_small.o] Error 1
+02:16:05 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:34:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:45:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:79:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:80:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(1);
+   ^
+hello_world_small.c:82:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:82:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:86:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:79:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:98:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:45:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'timer_isr':
+hello_world_small.c:183:5: error: break statement not within loop or switch
+     break;
+     ^
+hello_world_small.c:172:6: warning: unused variable 'seg' [-Wunused-variable]
+  int seg = 0;
+      ^
+make: *** [obj/default/hello_world_small.o] Error 1
+02:16:32 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:34:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:45:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:79:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:80:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(1);
+   ^
+hello_world_small.c:82:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:82:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:86:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:79:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:98:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:45:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'timer_isr':
+hello_world_small.c:172:6: warning: unused variable 'seg' [-Wunused-variable]
+  int seg = 0;
+      ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+obj/default/hello_world_small.o: In function `inicio_reloj':
+C:\Users\sebas\Downloads\DespertadorCPU-Microarquitectura\DespertadorCPU-Microarquitectura\software\DespertadorFinal/hello_world_small.c:80: undefined reference to `sleep'
+collect2.exe: error: ld returned 1 exit status
+make: *** [DespertadorFinal.elf] Error 1
+02:16:56 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:34:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:45:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:79:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:82:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:82:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:86:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:79:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:98:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:45:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'timer_isr':
+hello_world_small.c:172:6: warning: unused variable 'seg' [-Wunused-variable]
+  int seg = 0;
+      ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3084 Bytes program size (code + initialized data).
+Info:                        956 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:17:02 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:19:58 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:34:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:45:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:79:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:82:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:82:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:86:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:79:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:98:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:45:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3068 Bytes program size (code + initialized data).
+Info:                        972 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:20:03 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:23:40 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:34:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:45:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:79:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:82:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:82:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:86:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:79:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:98:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:45:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 2976 Bytes program size (code + initialized data).
+Info:                        1064 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:23:44 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:27:09 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:34:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:45:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:79:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:82:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:82:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:86:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:79:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:98:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:45:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'timer_isr':
+hello_world_small.c:188:26: error: break statement not within loop or switch
+                          break; // Sale del bucle
+                          ^
+hello_world_small.c: At top level:
+hello_world_small.c:201:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [obj/default/hello_world_small.o] Error 1
+02:27:12 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:34:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:45:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:79:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:82:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:82:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:86:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:79:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:98:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:45:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'timer_isr':
+hello_world_small.c:188:26: error: break statement not within loop or switch
+                          break; // Sale del bucle
+                          ^
+hello_world_small.c: At top level:
+hello_world_small.c:201:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [obj/default/hello_world_small.o] Error 1
+02:27:25 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:34:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:45:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:79:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:82:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:82:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:86:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:79:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:98:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:45:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c:200:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [obj/default/hello_world_small.o] Error 1
+02:27:27 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:34:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:45:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:79:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:82:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:82:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:86:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:79:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:98:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:45:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c:200:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [obj/default/hello_world_small.o] Error 1
+02:27:51 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:34:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:45:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:79:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:82:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:82:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:86:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:79:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:98:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:45:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 2960 Bytes program size (code + initialized data).
+Info:                        1080 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:27:57 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:29:36 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:34:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:45:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:79:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:82:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:82:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:86:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:79:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:98:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:45:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 2976 Bytes program size (code + initialized data).
+Info:                        1064 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:29:41 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:31:46 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:34:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:45:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:79:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:82:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:82:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:86:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:79:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:98:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:45:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3016 Bytes program size (code + initialized data).
+Info:                        1024 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:31:50 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:35:46 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:34:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:45:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:79:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:82:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:82:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:86:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:79:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:98:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:45:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3016 Bytes program size (code + initialized data).
+Info:                        1024 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:35:50 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:37:50 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:34:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:45:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:79:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:82:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:82:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:86:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:79:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:98:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:45:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3016 Bytes program size (code + initialized data).
+Info:                        1024 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:37:55 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:38:58 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:34:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:45:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:79:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:82:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:82:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:86:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:79:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:98:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:45:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'timer_isr':
+hello_world_small.c:180:14: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+   alt_putstr(seg);
+              ^
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3024 Bytes program size (code + initialized data).
+Info:                        1016 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:39:02 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:39:47 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:35:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:46:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:80:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:83:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:83:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:87:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:80:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:99:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:46:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'timer_isr':
+hello_world_small.c:180:14: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+   alt_putstr(seg);
+              ^
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3172 Bytes program size (code + initialized data).
+Info:                        864 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:39:51 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:40:02 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:35:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:46:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:80:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:83:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:83:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:87:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:80:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:99:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:46:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3164 Bytes program size (code + initialized data).
+Info:                        872 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:40:06 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:40:45 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:35:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:46:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:80:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:83:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:83:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:87:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:80:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:99:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:46:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3168 Bytes program size (code + initialized data).
+Info:                        868 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:40:49 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:41:37 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:35:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:46:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:80:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:83:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:83:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:87:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:80:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:99:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:46:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3164 Bytes program size (code + initialized data).
+Info:                        876 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:41:41 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:43:15 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:35:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:46:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:80:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:83:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:83:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:87:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:80:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:99:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:46:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3168 Bytes program size (code + initialized data).
+Info:                        872 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:43:19 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:44:05 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:35:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:46:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:80:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:83:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:83:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:87:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:80:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:99:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:46:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3184 Bytes program size (code + initialized data).
+Info:                        856 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:44:09 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:51:51 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:37:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:48:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:82:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:85:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:85:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:89:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:82:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:101:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:48:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'timer_isr':
+hello_world_small.c:222:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(animacion = 1){
+  ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3256 Bytes program size (code + initialized data).
+Info:                        784 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:51:55 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:52:55 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:37:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:48:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:82:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:85:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:85:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:89:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:82:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:101:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:48:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'timer_isr':
+hello_world_small.c:222:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(animacion = 1){
+  ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3276 Bytes program size (code + initialized data).
+Info:                        764 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:52:59 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:54:21 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:37:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:48:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:82:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:85:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:85:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:89:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:82:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:101:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:48:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'timer_isr':
+hello_world_small.c:222:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(animacion = 1){
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:229:6: error: redefinition of 'animacionf'
+ void animacionf(){
+      ^
+hello_world_small.c:173:6: note: previous definition of 'animacionf' was here
+ void animacionf(){
+      ^
+make: *** [obj/default/hello_world_small.o] Error 1
+02:54:23 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:37:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:48:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:82:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:85:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:85:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:89:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:82:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:101:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:48:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'timer_isr':
+hello_world_small.c:222:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(animacion = 1){
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:229:6: error: redefinition of 'animacionf'
+ void animacionf(){
+      ^
+hello_world_small.c:173:6: note: previous definition of 'animacionf' was here
+ void animacionf(){
+      ^
+make: *** [obj/default/hello_world_small.o] Error 1
+02:54:59 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:37:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:48:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:82:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:85:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:85:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:89:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:82:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:101:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:48:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'timer_isr':
+hello_world_small.c:206:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(animacion = 1){
+  ^
+hello_world_small.c:209:3: warning: implicit declaration of function 'animacionf2' [-Wimplicit-function-declaration]
+   animacionf2();
+   ^
+hello_world_small.c: At top level:
+hello_world_small.c:213:6: warning: conflicting types for 'animacionf2'
+ void animacionf2(){
+      ^
+hello_world_small.c:209:3: note: previous implicit declaration of 'animacionf2' was here
+   animacionf2();
+   ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3344 Bytes program size (code + initialized data).
+Info:                        696 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:55:05 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:57:56 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:37:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:48:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:82:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:85:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:85:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:89:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:82:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:101:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:48:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'timer_isr':
+hello_world_small.c:206:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(animacion = 1){
+  ^
+hello_world_small.c:209:3: warning: implicit declaration of function 'animacionf2' [-Wimplicit-function-declaration]
+   animacionf2();
+   ^
+hello_world_small.c: At top level:
+hello_world_small.c:213:6: warning: conflicting types for 'animacionf2'
+ void animacionf2(){
+      ^
+hello_world_small.c:209:3: note: previous implicit declaration of 'animacionf2' was here
+   animacionf2();
+   ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3336 Bytes program size (code + initialized data).
+Info:                        704 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:58:00 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:58:52 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:58:54 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+02:59:24 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:37:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:48:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:82:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:85:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:85:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:89:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:82:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:101:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:48:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3312 Bytes program size (code + initialized data).
+Info:                        728 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+02:59:28 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+03:09:51 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:40:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:51:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:85:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:88:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:88:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:92:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:85:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:104:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:51:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3276 Bytes program size (code + initialized data).
+Info:                        764 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+03:09:56 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+03:11:37 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:40:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:51:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:85:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:88:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:88:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:92:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:85:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:104:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:51:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3276 Bytes program size (code + initialized data).
+Info:                        764 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+03:11:41 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+03:14:10 **** Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../DespertadorFinal_bsp//HAL/inc -I../DespertadorFinal_bsp/ -I../DespertadorFinal_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:12:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora1= (short *) 0x30b0;
+                                  ^
+hello_world_small.c:13:34: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * hora2= (short *) 0x30a0;
+                                  ^
+hello_world_small.c:14:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min1= (short *) 0x3090;
+                                 ^
+hello_world_small.c:15:33: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * min2= (short *) 0x3080;
+                                 ^
+hello_world_small.c:16:36: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnhora= (short *) 0x3070;
+                                    ^
+hello_world_small.c:17:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnmin= (short *) 0x3060;
+                                   ^
+hello_world_small.c:18:38: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * btnapagar= (short *) 0x3050;
+                                      ^
+hello_world_small.c:19:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swmodo= (short *) 0x3040;
+                                   ^
+hello_world_small.c:20:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * buzzer= (short *) 0x3030;
+                                   ^
+hello_world_small.c:21:37: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ volatile unsigned short * swinicio= (short *) 0x3020;
+                                     ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:40:11: warning: implicit declaration of function 'cambiar_numero' [-Wimplicit-function-declaration]
+  *hora1 = cambiar_numero(0);
+           ^
+hello_world_small.c:51:4: warning: implicit declaration of function 'sumar_dato' [-Wimplicit-function-declaration]
+    sumar_dato(&hora, hora1, hora2);
+    ^
+hello_world_small.c: In function 'inicio_reloj':
+hello_world_small.c:85:3: warning: implicit declaration of function 'actualizar_datos' [-Wimplicit-function-declaration]
+   actualizar_datos();
+   ^
+hello_world_small.c:88:13: warning: character constant too long for its type
+  alt_putstr('TERMINO LA OSTIA');
+             ^
+hello_world_small.c:88:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world_small.c:5:0:
+../DespertadorFinal_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c: At top level:
+hello_world_small.c:92:6: warning: conflicting types for 'actualizar_datos'
+ void actualizar_datos(){
+      ^
+hello_world_small.c:85:3: note: previous implicit declaration of 'actualizar_datos' was here
+   actualizar_datos();
+   ^
+hello_world_small.c:104:6: warning: conflicting types for 'sumar_dato'
+ void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+      ^
+hello_world_small.c:51:4: note: previous implicit declaration of 'sumar_dato' was here
+    sumar_dato(&hora, hora1, hora2);
+    ^
+Info: Linking DespertadorFinal.elf
+nios2-elf-g++  -T'../DespertadorFinal_bsp//linker.x' -msys-crt0='../DespertadorFinal_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../DespertadorFinal_bsp/  -msmallc  -Wl,-Map=DespertadorFinal.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o DespertadorFinal.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert DespertadorFinal.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name DespertadorCPU --quartus_project_dir "C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura" --jdi ../..//output_files/DespertadorCPU.jdi --sopcinfo C:/Users/sebas/Downloads/DespertadorCPU-Microarquitectura/DespertadorCPU-Microarquitectura/software/DespertadorFinal_bsp/../../DespertadorCPU.sopcinfo
+Info: (DespertadorFinal.elf) 3276 Bytes program size (code + initialized data).
+Info:                        764 Bytes free for stack + heap.
+Info: Creating DespertadorFinal.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DespertadorFinal.elf >DespertadorFinal.objdump
+[DespertadorFinal build complete]
+03:14:14 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]

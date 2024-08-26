@@ -201,14 +201,7 @@ void init_timer_interrupt(void){
 			ALTERA_AVALON_TIMER_CONTROL_ITO_MSK);
 }
 
-int revisar_igualdad(){
-	if((hora_actual == hora_seteada) && (min_actual == min_seteada)){
-		return 1;
-	}
-	else{
-		return 0;
-	}
-}
+
 
 static void timer_isr(void * context, alt_u32 id){
 
