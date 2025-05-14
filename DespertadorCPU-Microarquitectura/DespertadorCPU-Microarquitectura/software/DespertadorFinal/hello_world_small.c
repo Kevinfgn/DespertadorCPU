@@ -1,0 +1,279 @@
+#include <stdio.h>
+#include <system.h>
+#include <sys/alt_irq.h>
+#include <altera_avalon_timer_regs.h>
+#include "sys/alt_stdio.h"
+#include <time.h>
+
+void init_timer_interrupt (void);
+static void timer_isr (void * context, alt_u32 id);
+
+
+volatile unsigned short * hora1= (short *) 0x30b0;
+volatile unsigned short * hora2= (short *) 0x30a0;
+volatile unsigned short * min1= (short *) 0x3090;
+volatile unsigned short * min2= (short *) 0x3080;
+volatile unsigned short * btnhora= (short *) 0x3070;
+volatile unsigned short * btnmin= (short *) 0x3060;
+volatile unsigned short * btnapagar= (short *) 0x3050;
+volatile unsigned short * swmodo= (short *) 0x3040;
+volatile unsigned short * buzzer= (short *) 0x3030;
+volatile unsigned short * swinicio= (short *) 0x3020;
+
+short hora = 0;
+short min = 0;
+int seg = 0;
+unsigned short ultimo_estado_btnhora = 0xFF;
+unsigned short ultimo_estado_btnmin = 0xFF;
+unsigned short ultimo_estado_swinicio = 0xFF;
+unsigned short ultimo_estado_swmodo = 0xFF;
+
+short inicio = 0;
+unsigned short mostrar_animacion = 1;
+unsigned short animacion = 0;
+
+unsigned short hora_seteada = 0;
+unsigned short min_seteada = 0;
+unsigned short hora_actual = 0;
+unsigned short min_actual = 0;
+unsigned short modo = 0;  //modo 0 es hora actual
+
+int main(void){
+
+
+	init_timer_interrupt();
+	*hora1 = cambiar_numero(0);
+	*hora2 = cambiar_numero(0);
+	*min1 = cambiar_numero(0);
+	*min2 = cambiar_numero(0);
+	while(1)
+	{
+		unsigned short estado_actual_btnhora = *btnhora;
+		unsigned short estado_actual_btnmin = *btnmin;
+		unsigned short estado_actual_swinicio = *swinicio;
+		unsigned short estado_actual_swinicio = *swmodo;
+		//*hora1 = 48;
+		if(modo == 0){
+			if((ultimo_estado_btnhora & 0x01) && (estado_actual_btnhora == 0x00)){
+				sumar_dato(&hora, hora1, hora2);
+				hora_actual = hora;
+			}
+
+			if((ultimo_estado_btnmin & 0x01) && (estado_actual_btnmin == 0x00)){
+				sumar_dato(&min, min1, min2);
+				min_actual = hora;
+			}
+
+			if((ultimo_estado_swinicio & 0x01) && (estado_actual_swinicio == 0x00)){
+				inicio = 1;
+			}
+		}
+
+
+		else{//modo seleccion de alarma
+			if((ultimo_estado_btnhora & 0x01) && (estado_actual_btnhora == 0x00)){
+				sumar_dato(&hora, hora1, hora2);
+				hora_seteada = hora;
+			}
+
+			if((ultimo_estado_btnmin & 0x01) && (estado_actual_btnmin == 0x00)){
+				sumar_dato(&min, min1, min2);
+				min_seteada = hora;
+			}
+
+			if((ultimo_estado_swinicio & 0x00) && (estado_actual_swinicio == 0x01)){
+				inicio = 0;
+			}
+
+		}
+
+
+		ultimo_estado_btnhora = estado_actual_btnhora;
+		ultimo_estado_btnmin = estado_actual_btnmin;
+		ultimo_estado_swinicio = estado_actual_swinicio;
+	}
+	return 0;
+}
+
+void inicio_reloj(){
+
+	while(1){
+		if(min==0){
+			if(hora>0){
+				hora--;
+				min = 59;
+			}
+			else{
+				break;
+			}
+		}
+		else{
+			min--;
+		}
+		actualizar_datos();
+
+	}
+	alt_putstr('TERMINO LA OSTIA');
+
+}
+
+void actualizar_datos(){
+	unsigned short decenas_horas = (hora/10)%10;
+	unsigned short unidades_horas = hora % 10;
+	unsigned short decenas_min = (min/10)%10;
+	unsigned short unidades_min = min % 10;
+
+	*hora1 = cambiar_numero(decenas_horas);
+	*hora2 = cambiar_numero(unidades_horas);
+	*min1 = cambiar_numero(decenas_min);
+	*min2 = cambiar_numero(unidades_min);
+}
+
+void sumar_dato(unsigned short *valor, volatile unsigned short *dato1, volatile unsigned short *dato2){
+	if(*valor <= 59){
+		(*valor)++;
+		unsigned short decenas = (*valor/10)%10;
+		unsigned short unidades = *valor % 10;
+		*dato1 = cambiar_numero(decenas);
+		*dato2 = cambiar_numero(unidades);
+	}
+}
+
+
+int cambiar_numero(int entrada){
+	int salida = 0;
+	switch(entrada){
+	case 0:
+		salida = 64;
+		break;
+
+	case 1:
+		salida = 121;
+		break;
+
+	case 2:
+			salida = 36;
+			break;
+
+	case 3:
+			salida = 48;
+			break;
+
+	case 4:
+			salida = 25;
+			break;
+
+	case 5:
+			salida = 18;
+			break;
+
+	case 6:
+			salida = 2;
+			break;
+
+	case 7:
+			salida = 120;
+			break;
+
+	case 8:
+			salida = 0;
+			break;
+
+	case 9:
+			salida = 24;
+			break;
+
+	default:
+		salida = 0;
+		break;
+	}
+	return salida;
+
+}
+
+
+void init_timer_interrupt(void){
+	alt_ic_isr_register(TIMER_0_IRQ_INTERRUPT_CONTROLLER_ID, TIMER_0_IRQ, (void *)timer_isr, NULL, 0x0);
+
+	IOWR_ALTERA_AVALON_TIMER_CONTROL(TIMER_0_BASE,
+			ALTERA_AVALON_TIMER_CONTROL_CONT_MSK |
+			ALTERA_AVALON_TIMER_CONTROL_START_MSK |
+			ALTERA_AVALON_TIMER_CONTROL_ITO_MSK);
+}
+
+int revisar_igualdad(){
+	if((hora_actual == hora_seteada) && (min_actual == min_seteada)){
+		return 1;
+	}
+	else{
+		return 0;
+	}
+}
+
+static void timer_isr(void * context, alt_u32 id){
+
+	IOWR_ALTERA_AVALON_TIMER_STATUS(TIMER_0_BASE,0);
+
+
+	if(modo == 1){//modo seleccion de alarma
+		hora = 0;
+		min = 0;
+		*hora1 = cambiar_numero(0);
+		*hora2 = cambiar_numero(0);
+		*min1 = cambiar_numero(0);
+		*min2 = cambiar_numero(0);
+		// aca se procede a sumar las cosas
+
+	}
+	else{
+		if (inicio == 1) {
+				alt_putstr("Contando");
+
+				seg++;
+				if(seg == 1){ //cambiar segundos a 59
+					alt_putstr("LLEGO");
+					min++;
+					if(min==59){
+						hora++;
+
+						if(hora >=24){
+							hora=0;
+							seg=0;
+							inicio = 0;
+							//animacion = 1;
+							//alt_putstr("TERMINO");
+						}
+						min = 0;
+					}
+					seg = 0;
+				}
+
+			    actualizar_datos(); // Actualiza la visualización o el estado del temporizador
+			}
+	}
+
+	/*
+	if(animacion = 1){
+		alt_putstr("pene");
+		mostrar_animacion = !mostrar_animacion;
+		animacionf2();
+	}*/
+}
+
+void animacionf2(){
+		if(mostrar_animacion){
+			alt_putstr("k");
+			*hora1 = cambiar_numero(63);
+			*hora2 = cambiar_numero(63);
+			*min1 = cambiar_numero(63);
+			*min2 = cambiar_numero(63);
+		}
+		else{
+			*hora1 = cambiar_numero(127);
+			*hora2 = cambiar_numero(127);
+			*min1 = cambiar_numero(127);
+			*min2 = cambiar_numero(127);
+		}
+	}
+
+

@@ -1,0 +1,24 @@
+#include <studio.h>
+#include <system.h>
+#include <sys/alt_irq.h>
+#include <altera_avalon_timer_regs.h>
+#include "sys/alt_stdio.h"
+
+void init_timer_interrupt (void);
+static void time_isr (void * context, alt_u32 id);
+
+int main(void){
+
+}
+
+
+void init_timer_interrupt(void){
+
+}
+
+
+static void time_isr(void * context, alt_u32 id){
+
+}
+
+

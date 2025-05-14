@@ -1,0 +1,9 @@
+03:14:14 **** Incremental Build of configuration Nios II for project DespertadorFinal ****
+make all 
+Info: Building ../DespertadorFinal_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../DespertadorFinal_bsp/
+[BSP build complete]
+[DespertadorFinal build complete]
+
+03:14:15 Build Finished (took 1s.238ms)
+
