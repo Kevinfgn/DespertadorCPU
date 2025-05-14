@@ -1,0 +1,15 @@
+	DespertadorCPU u0 (
+		.btnapagar_export (<connected-to-btnapagar_export>), // btnapagar.export
+		.btnhora_export   (<connected-to-btnhora_export>),   //   btnhora.export
+		.btnmin_export    (<connected-to-btnmin_export>),    //    btnmin.export
+		.buzzer_export    (<connected-to-buzzer_export>),    //    buzzer.export
+		.clk_clk          (<connected-to-clk_clk>),          //       clk.clk
+		.hora1_export     (<connected-to-hora1_export>),     //     hora1.export
+		.hora2_export     (<connected-to-hora2_export>),     //     hora2.export
+		.min1_export      (<connected-to-min1_export>),      //      min1.export
+		.min2_export      (<connected-to-min2_export>),      //      min2.export
+		.reset_reset_n    (<connected-to-reset_reset_n>),    //     reset.reset_n
+		.swmodo_export    (<connected-to-swmodo_export>),    //    swmodo.export
+		.swinicio_export  (<connected-to-swinicio_export>)   //  swinicio.export
+	);
+

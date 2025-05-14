@@ -1,0 +1,17 @@
+	component DespertadorCPU is
+		port (
+			btnapagar_export : in  std_logic                    := 'X'; -- export
+			btnhora_export   : in  std_logic                    := 'X'; -- export
+			btnmin_export    : in  std_logic                    := 'X'; -- export
+			buzzer_export    : out std_logic;                           -- export
+			clk_clk          : in  std_logic                    := 'X'; -- clk
+			hora1_export     : out std_logic_vector(6 downto 0);        -- export
+			hora2_export     : out std_logic_vector(6 downto 0);        -- export
+			min1_export      : out std_logic_vector(6 downto 0);        -- export
+			min2_export      : out std_logic_vector(6 downto 0);        -- export
+			reset_reset_n    : in  std_logic                    := 'X'; -- reset_n
+			swinicio_export  : in  std_logic                    := 'X'; -- export
+			swmodo_export    : in  std_logic                    := 'X'  -- export
+		);
+	end component DespertadorCPU;
+
